@@ -1,5 +1,17 @@
-.topnav{
-    border: 1px;
-    border-style: solid;
-    font-style: 12px;
-}
+body {
+    background-color: black;
+ }
+ 
+ nav {
+    background-color: white;
+ }
+ 
+ nav button {
+    background-color: red;
+    height: 30px;
+ }
+ 
+ nav button:hover {
+    cursor: pointer;
+    background-color: blue;
+ }
