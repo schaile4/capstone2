@@ -1,17 +1,44 @@
 body {
-    background-color: black;
- }
- 
- nav {
-    background-color: white;
- }
- 
- nav button {
-    background-color: red;
-    height: 30px;
- }
- 
- nav button:hover {
+    background-color: #000000;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 80px
+}
+
+.navone {
+    background-color: #FFFFFF;
+    border: 8px solid #FFFFFF;
+    border-radius: 30px;
+    box-shadow: #A9a9a9 4px 4px 0 0;
+    color: #422800;
     cursor: pointer;
-    background-color: blue;
- }
+    display: inline-block;
+    font-weight: 600;
+    font-size: 5px;
+    padding: 0 90px;
+    line-height: 90px;
+    margin-left: 50px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.button {
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.navtwo {
+    background-color: #FFFFFF;
+    border: 8px solid #FFFFFF;
+    border-radius: 30px;
+    box-shadow: #A9a9a9 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 5px;
+    padding: 0 90px;
+    line-height: 70px;
+    margin-left: 90px;
+}
