@@ -1,22 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" conent="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="capstone.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <h1><center>NATIONAL PARKS</center></h1>
+    <h1>
+        <center>NATIONAL PARKS</center>
+    </h1>
     <nav class="navone">
-        <button class="button"><a href="explore.html">Explore Parks</a></button>
+        <button class="button"><a href="parks.html">Explore Parks</a></button>
     </nav>
     <nav class="navtwo">
-        <button class="button"><a href="information.html">Information</a></button>
+        <button class="button"><a href="mountains.html">View Mountains</a></button>
     </nav>
     <div class="gif">
         <img src="mountain.gif" alt="psychedelic mountain" align="right">
     </div>
-    <h2></h2>
+    <h2>America's national parks and mountains are just as unique as the people who explore them. There is something
+        for everyone to enjoy, views to take in, and moments to capture. Which experience is meant for you? Find out
+        here.</h2>
+    <body>
+        <table>
+            <tr>
+                <td></td>
+                <td><button onclick="onMove(this)" id="up">^</button></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><button onclick="onMove(this)" id="left">&lt;</button></td>
+                <td></td>
+                <td><button onclick="onMove(this)" id="right">&gt;</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button onclick="onMove(this)" id="down">v</button></td>
+                <td></td>
+            </tr>
+        </table>
+        <div id="board">
+            <div id="player" data-left="0" data-top="0">👣 </div>
+            <div id="treasure" data-left="5" data-top="5" data-ched="100"></div>
+        </div>
+    </body>
+    <script>
+        board.style = "position:relative;width:74em;height:8em";
+        board.style.backgroundColor = "#627844";
+        player.style = "position:absolute;left:0;top:0";
+        treasure.style = "position:absolute;left:5em;top:5em";
+        document.body.style.color = "white";
+
+        function onMove(e) {
+            console.log(e.id);
+            if (e.id == "down") {
+                player.dataset.top = Number(player.dataset.top) + 1;
+            }
+            if (e.id == "up") {
+                player.dataset.top = Number(player.dataset.top) - 1;
+            }
+            if (e.id == "left") {
+                player.dataset.left = Number(player.dataset.left) - 1;
+            }
+            if (e.id == "right") {
+                player.dataset.left = Number(player.dataset.left) + 1;
+            }
+
+            player.style.top = player.dataset.top + "em";
+            player.style.left = player.dataset.left + "em";
+        }
+    </script>
+    <style>
+        body {
+          background-image: url('background.jpg');
+        }
+        </style>
 </body>
 </html

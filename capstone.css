@@ -1,9 +1,11 @@
-body {
-    background-color: #000000;
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+body, {
+    background-color: #281903;
+    font-family: 'Abril Fatface', serif;
 }
 
 h1 {
-    color: #FFFFFF;
+    color: #683F83;
     font-size: 80px
 }
 
@@ -18,11 +20,12 @@ h1 {
     font-weight: 600;
     font-size: 5px;
     padding: 0 90px;
-    line-height: 90px;
+    line-height: 70px;
     margin-left: 50px;
     margin-top: 10px;
     text-decoration: none;
 }
+
 .button {
     font-size: 50px;
     text-decoration: none;
@@ -40,5 +43,18 @@ h1 {
     font-size: 5px;
     padding: 0 90px;
     line-height: 70px;
-    margin-left: 90px;
+    margin-left: 50px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.gif {
+    margin-right: 20px;
+    margin-top: 50px;
+    opacity: .3;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-size: 40px;
 }
