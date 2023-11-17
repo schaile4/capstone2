@@ -2505,7 +2505,7 @@ const nationalParksArray = [
         coordinates: [
         -74.0588092,
         40.6035923
-        ],
+        ], 
         type: "Point"
     }
     },
@@ -5904,23 +5904,7 @@ const nationalParksArray = [
     }
     },
     {
-    LocationID: "seki",
-    LocationName: "Sequoia & Kings Canyon National Park",
-    Address: "Sequoia & Kings Canyon National Parks, 47050 Generals Highway",
-    City: "Three Rivers",
-    State: "California",
-    ZipCode: "93271-9700",
-    Phone: "(559) 565-3341",
-    Fax: "(559) 565-3730",
-    Latitude: 36.491318,
-    Longitude: -118.825722,
-    Location: {
-        coordinates: [
-        -118.825722,
-        36.491318
-        ],
-        type: "Point"
-    }
+   ç
     },
     {
     LocationID: "SHIL",

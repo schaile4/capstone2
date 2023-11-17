@@ -2,26 +2,441 @@
 <html lang="en">
 
 <head>
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
     <style>
         #map {
-            height: 350px;
+            height: 400px;
         }
     </style>
 </head>
 
 <body>
-    <div id="map"></div>
-    <script>
-        var map = L.map('map').setView([37.0902, 95.7129], 2);
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(map);
-    </script>
+    <h1 style="font-size: x-large; color: ;"><center> EXPLORE PARKS</center></h1>
 
+    <nav class="navone">
+        <button class="button"><a href="capstone.html">Return To Home</a></button>
+    </nav>
+        <div id="map"></div>
+        <script>
+            var map = L.map('map').setView([37.0902, 95.7129], 2);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+            
+            L.marker([44.3385559, -68.2733346],
+                {
+                    title: "Acadia National Park",
+
+                })
+                .bindPopup(
+                    '<h2><center>Acadia National Park P.O. Box 177 Bar Harbor Maine 4609 (207) 288-3338 207) 288-8813<center><h2>',
+    
+                        )
+                .addTo(map)
+
+            L.marker([38.733081,-109.5925139],
+                {
+                    title: "Arches National Park",
+                })
+                .bindPopup('<h2><center>Arches National Park<center><h2>')
+                .addTo(map)
+
+            L.marker([43.716892, -101.892914],
+                {
+                    title: "Badlands National Park",
+                })
+                .bindPopup('<h2><center>Badlands National Park<center><h2>')
+                .addTo(map)
+
+            L.marker([29.2166538, -103.2663479],
+            {
+                title: "Big Bend National Park",
+            })
+            .bindPopup('<h2><center>Big Bend National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([25.4631936, -80.3463139],
+            {
+                title: "Biscayne National Park",
+
+            })
+            .bindPopup('<h2><center>Biscayne National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([38.4657461,-107.16668],
+            {
+                title: "Black Canyon of the Gunnison National Park"
+            })
+            .bindPopup('<h2><center>Black Canyon of the Gunnison National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([37.5965706, -112.1787896],
+            {
+             title: "Bryce Canyon Nation Park",
+            })
+            .bindPopup('<h2><center>Bryce Canyon National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([38.5398057, -109.5061713],
+            {
+                title: "Canyonlands National Park"
+            })
+            .bindPopup('<h2><center>Canyonlands National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([38.291308,-111.262257],
+            {
+                title: "Capitol Reef National Park"
+            })
+            .bindPopup('<h2><center>Capitol Reef National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([32.386916,-104.221362],
+            {
+                title: "Carlsbad Caverns National Park"
+            })
+            .bindPopup('<h2><center>Carlsbad Caverns National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([34.245852,-119.2664691],
+            {
+                title: "Channel Islands National Park"
+            })
+            .bindPopup('<h2><center>Channel Islands National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([42.962058, -122.148106],
+            {
+                title: "Crater Lake National Park"
+            })
+            .bindPopup('<h2><center>Crater Lake National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([41.2824455, -81.5706109],
+            {
+                title: "Cuyahoga Valley National Park"
+            })
+            .bindPopup('<h2><center>Cuyahoga Valley National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([36.5053891,-117.0794082],
+            {
+                title: "Death Valley National Park"
+            })
+            .bindPopup('<h2><center>Death Valley National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([25.395755,-80.5834525],
+            {
+                title: "Everglades National Park"
+            })
+            .bindPopup('<h2><center>Everglades National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([67.251868,-150.184189],
+            {
+                title: "Gates of the Arctic National Park & Preserve"
+            })
+            .bindPopup('<h2><center>Gates of the Arctic National Park & Preserve<center><h2>')
+            .addTo(map)
+
+            L.marker([40.6035923,-74.0588092],
+            {
+                title: "Gateway National Recreation Area"
+            })
+            .bindPopup('<h2><center>Gateway National Recreation Area<center><h2>')
+            .addTo(map)
+
+            L.marker([58.8318772,-136.9987946],
+            {
+                title: "Glacier Bay National Park and Preserve"
+            })
+            .bindPopup('<h2><center>Glacier Bay National Park and Preserve<center><h2>')
+            .addTo(map)
+
+            L.marker([36.3551644,-112.6612088],
+            {
+                title: "Grand Canyon National Park"
+            })
+            .bindPopup('<h2><center>Grand Canyon National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([43.729398,-110.709055],
+            {
+                title:"Grand Teton National Park & John D. Rockefeller Jr. Memorial Parkway"
+            })
+            .bindPopup('<h2><center>Grand Teton National Park & John D. Rockefeller Jr. Memorial Parkway<center><h2>')
+            .addTo(map)
+
+            L.marker([38.9295007,-114.2628251],
+            {
+                title:"Great Basin National Park"
+            })
+            .bindPopup('<h2><center>Great Basin National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([37.7275919,-105.6412527],
+            {
+                title:"Great Sand Dunes National Park and Preserve"
+            })
+            .bindPopup('<h2><center>Great Sand Dunes National Park and Preserve<center><h2>')
+            .addTo(map)
+
+            L.marker([],
+            {
+                title:""
+            })
+            .bindPopup('<h2><center><center><h2>')
+            .addTo(map)
+
+            L.marker([35.691031, -83.536198],
+            {
+                title:"Great Smoky Mountains National Park"
+            })
+            .bindPopup('<h2><center>Great Smoky Mountains National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([31.903912,-104.868813],
+            {
+                title:"Guadalupe Mountains National Park"
+            })
+            .bindPopup('<h2><center>Guadalupe Mountains National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([20.856944, -156.313056],
+            {
+                title:"Haleakala National Park"
+            })
+            .bindPopup('<h2><center>Haleakala National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([19.299004,-155.3569573],
+            {
+                title: "Hawaii Volcanoes National Park"
+            })
+            .bindPopup('<h2><center>Hawaii Volcanoes National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([34.5116392,-93.0539835],
+            {
+                title: "Hot Springs National Park"
+            })
+            .bindPopup('<h2><center>Hot Springs National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([41.6306,-87.086864],
+            {
+                title:"Indiana Dunes National Lakeshore"
+            })
+            .bindPopup('<h2><center>Indiana Dunes National Lakeshore<center><h2>')
+            .addTo(map)
+
+            L.marker([47.1225521,-88.5645333],
+            {
+                title:"Isle Royale National Park"
+            })
+            .bindPopup('<h2><center>Isle Royale National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([34.129523,-116.036937],
+            {
+                title:"Joshua Tree National Park"
+            })
+            .bindPopup('<h2><center>Joshua Tree National Park, 74485 National Park Drive<center><h2>')
+            .addTo(map)
+
+            L.marker([],
+            {
+                title:"Katmai National Park & Preserve"
+            })
+            .bindPopup('<h2><center>Katmai National Park & Preserve<center><h2>')
+            .addTo(map)
+
+
+
+            L.marker([59.8463648,-150.1844857],
+            {
+                title: "Kenai Fjords National Park"
+            })
+            .bindPopup('<h2><center>Kenai Fjords National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([67.146678,-161.292928],
+            {
+                title:"Kobuk Valley National Park"
+            })
+            .bindPopup('<h2><center>Kobuk Valley National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([,],
+            {
+                title:""
+            })
+            .bindPopup('<h2><center><center><h2>')
+            .addTo(map)
+
+            L.marker([61.2173565,-149.886172],
+            {
+                title:"Lake Clark National Park & Preserve"
+            })
+            .bindPopup('<h2><center>Lake Clark National Park & Preserve<center><h2>')
+            .addTo(map)
+
+            L.marker([40.5093134,-121.4330998],
+            {
+                title:"Lassen Volcanic National Park"
+            })
+            .bindPopup('<h2><center>Lassen Volcanic National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([37.192189,-86.121529],
+            {
+                title:"Mammoth Cave National Park"
+            })
+            .bindPopup('<h2><center>Mammoth Cave National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([37.16748,-108.525539],
+            {
+                title:"Mesa Verde National Park"
+            })
+            .bindPopup('<h2><center>Mesa Verde National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([46.7558282,-122.1207998],
+            {
+                title:"Mount Rainier National Park"
+            })
+            .bindPopup('<h2><center>Mount Rainier National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([37.899209,-81.157499],
+            {
+                title:"New River Gorge National River"
+            })
+            .bindPopup('<h2><center>New River Gorge National River<center><h2>')
+            .addTo(map)
+
+            L.marker([34.90999,-109.806792],
+            {
+                title:"Petrified Forest National Park"
+            })
+            .bindPopup('<h2><center>Petrified Forest National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([48.5109531,-122.2275204],
+            {
+                title:"North Cascades National Park Service Complex"
+            })
+            .bindPopup('<h2><center>North Cascades National Park Service Complex<center><h2>')
+            .addTo(map)
+
+            L.marker([36.4869826,-121.2135701],
+            {
+                title:"Pinnacles National Monument"
+            })
+            .bindPopup('<h2><center>Pinnacles National Monument<center><h2>')
+            .addTo(map)
+
+            L.marker([41.753421,-124.194538],
+            {
+                title:"Redwood National and State Parks"
+            })
+            .bindPopup('<h2><center>Redwood National and State Parks<center><h2>')
+            .addTo(map)
+
+            L.marker([40.3753949,-105.5059499],
+            {
+                title:"Rocky Mountain National Park"
+            })
+            .bindPopup('<h2><center>Rocky Mountain National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([32.1792142,-110.738004],
+            {
+                title:"Saguaro National Park"
+            })
+            .bindPopup('<h2><center>Saguaro National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([32.1792142,-110.738004],
+            {
+                title:"Saguaro National Park"
+            })
+            .bindPopup('<h2><center>Saguaro National Park<center><h2>')
+            .addTo(map)
+
+
+            L.marker([40.7839654,-74.2339497],
+            {
+                title:"Thomas Edison National Historical Park"
+            })
+            .bindPopup('<h2><center>Thomas Edison National Historical Park<center><h2>')
+            .addTo(map)
+
+
+            L.marker([18.34215,-64.767569],
+            {
+                title:"Virgin Islands National Park"
+            })
+            .bindPopup('<h2><center>Virgin Islands National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([48.6020835,-93.403716],
+            {
+                title:"Voyageurs National Park"
+            })
+            .bindPopup('<h2><center>Voyageurs National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([32.7696209,-106.3182956],
+            {
+                title:"White Sands National Monument"
+            })
+            .bindPopup('<h2><center>White Sands National Monument<center><h2>')
+            .addTo(map)
+
+            L.marker([61.5614999,-143.8523096],
+            {
+                title:"Wrangell-St. Elias National Park & Preserve"
+            })
+            .bindPopup('<h2><center>Wrangell-St. Elias National Park & Preserve<center><h2>')
+            .addTo(map)
+
+            L.marker([44.462085,-110.642441],
+            {
+                title:"Yellowstone National Park"
+            })
+            .bindPopup('<h2><center>Yellowstone National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([37.7189997,-119.5571677],
+            {
+                title:"Yosemite National Park"
+            })
+            .bindPopup('<h2><center>Yosemite National Park<center><h2>')
+            .addTo(map)
+
+            L.marker([37.240801,-112.941626],
+            {
+                title:"Zion National Park"
+            })
+            .bindPopup('<h2><center>Zion National Park<center><h2>')
+            .addTo(map)
+
+    
+
+        </script>
+ <style>
+    body {
+      background-image: url('mountains.jpeg');
+    }
+    </style>
 </body>
 <html>

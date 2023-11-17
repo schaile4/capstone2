@@ -3,26 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mountains</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/main.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>VIEW MOUNTAINS</title>
 
-    <!-- FIRST LOAD ALL THE MOUNTAINS LIKE THIS -->
-    <script src="./data/mountainData.js"></script>
+    <script src="./mountainData.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./mountains.css">
+    <script src="/scripts/mountainData.js"></script>
 
-    <script src="./scripts/mountains.js"></script>
 </head>
 <body>
+    <section class="background">
+    <header>
+    <h1>VIEW MOUNTAINS</h1> 
+    <nav class="navone">
+        <button class="button"><a href="capstone.html">RETURN HOME</a></button>
+    </nav>
+    <select id="mountains"><option value="">Select a Mountain</option></select>
+    </header>
+      
+      <div class="background">
 
-    <h1>Mountains</h1> 
-    <a href="index.html">Home</a>
+      </div>   
+  <p id="results"></p> 
+   
+    </section>
+    <button id="submountain">Submit</button>
+    <p id="name" class="poop"></p>
+    <p id="elevation" class="poop"></p>
+    <p id="desc" class="poop"></p>
 
-    <!-- THIRD MAKE A PLACE FOR THE MOUNTAIN LIST AND A DEFAULT OPTION -->
-    <select id="list"><option value="">Select a Mountain</option></select>
-
-    <!-- FIFTH ADD TARGET FOR RESULTS -->
-    <p id="results"></p>
 </body>
+
+<script>
+    // document.body.innerHTML += mountainsArray.length; 
+
+    mountainsArray.forEach(mountain => { 
+        const option = document.createElement("option"); 
+        option.innerHTML = mountain.name; 
+        list.appendChild(option); 
+    }); 
+
+    
+    list.addEventListener("change", event=>{ 
+        let mountain = mountainsArray.find(m=>m.name == event.target.value); 
+        results.innerHTML = `<h1>${mountain.name}</h1>`; 
+        results.innerHTML += mountain.desc;
+        results.innerHTML += `<h3>Elevation: ${mountain.elevation} feet</h3>`; 
+        results.innerHTML += `<h3>Effort: ${mountain.effort}</h3>`; 
+        results.innerHTML += `<img src="MountainImages/images/${mountain.img}">`;
+    }); //END LISTENER
+    
+    
+</script>
+<style>
+    body {
+      background-image: url('poop.gif');
+    }
+    </style>
 </html>
