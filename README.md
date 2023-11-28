@@ -1,7 +1,7 @@
 # National Parks Capstone
 
 # Overview 
-This web application provides facts about national parks and mountains located in the United States. The objective of this project was to create a user friendly application for users to navigate a databases using HTML, javascript, and css. This project taught me a lot about time management, JavaScript, and the importance of fi.
+This web application provides facts about national parks and mountains located in the United States. The objective of this project was to create a user friendly application for users to navigate a databases using HTML, javascript, and css. This project taught me a lot about time management, JavaScript, and the importance of utilizing the resources available to you.
 
 # HTML pages
 Homepage (capstone.html)
